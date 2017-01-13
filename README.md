@@ -1,6 +1,6 @@
 # gdrive-upload
 Script backup folder for Ubuntu / Centos / Debain OS to Google Drive
-Compress type: tar , AES-256 Encrypt
+<br>Compress type: tar , AES-256 Encrypt
 
 1. Please download the gdrive source from https://github.com/prasmussen/gdrive
 2. Rename the file u download to gdrive, change the permission " chmod +x gdrive "
