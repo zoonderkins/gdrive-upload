@@ -2,7 +2,11 @@
 Script backup folder for Ubuntu / Centos / Debain OS to Google Drive
 <br>Compress type: tar , AES-256 Encrypt
 
-1. Please download the gdrive source from https://github.com/prasmussen/gdrive
+Download: <a href="https://github.com/ookangzheng/gdrive-upload/raw/master/server-backup.sh">Download Script </a> |<a href="https://docs.google.com/uc?id=0B3X9GlR6EmbnQ0FtZmJJUXEyRTA&export=download">Linux 64 bit</a>|<a href="https://docs.google.com/uc?id=0B3X9GlR6EmbnLV92dHBpTkFhTEU&export=download">Linux 32 bit</a>
+
+<br>
+
+1. Please download the gdrive source from https://github.com/prasmussen/gdrive (Skip this step if you download from above)
 2. Rename the file u download to gdrive, change the permission " chmod +x gdrive "
 3. First time run, " ./gdrive about " , then it will appear a link, copy it to the browser and login with your Gmail Account that you wan to use.
 4. Allow the permission request, it will return a long code , copy it and paste in to your ssh, DONE!
