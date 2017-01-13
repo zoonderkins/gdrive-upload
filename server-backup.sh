@@ -1,16 +1,20 @@
 #!/bin/sh
+## /home/wwwroot (was my default website home directory, pls update it
 
 # tar the server directory
 tar -cvf "server-backup-$(date '+%Y-%m-%d').tar" /home/wwwroot
 
-# encrypt the tar
-#if you need encrpyt ur file, enable this function
+# Encrypt the tar files
+#if you need encrpyt ur file, pls enable this function
+
 #openssl aes-256-cbc -a -salt -in "server-backup-$(date '+%Y-%m-%d').tar" -out "server-backup-$(date '+%Y-%m-%d').tar.enc" -pass 'pass:xxxxx'
-# -pass: need change to ur google drive password
+# -pass: will be your encrypt password (Pls REMEMBER it)
 
 # upload to google drive
-drive upload --file "server-backup-$(date '+%Y-%m-%d').tar"
-#drive upload --file "server3-backup-$(date '+%Y-%m-%d').tar.enc"
+./gdrive upload "server-backup-$(date '+%Y-%m-%d').tar"
+
+#only activate encryption mode
+#./gdrive upload "server3-backup-$(date '+%Y-%m-%d').tar.enc"
 
 # remove the original tar
 rm -rf "server-backup-$(date '+%Y-%m-%d').tar"
