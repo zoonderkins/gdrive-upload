@@ -15,7 +15,7 @@ tar -cvf "server-backup-$(date '+%Y-%m-%d').tar" /home/wwwroot
 
 #only activate encryption mode
 #./gdrive upload "server-backup-$(date '+%Y-%m-%d').tar.enc"
-# rm -rf "server-backup-$(date '+%Y-%m-%d').tar" 
+# rm -rf "server-backup-$(date '+%Y-%m-%d').tar.enc" 
 
 # remove the original tar
 rm -rf "server-backup-$(date '+%Y-%m-%d').tar"
