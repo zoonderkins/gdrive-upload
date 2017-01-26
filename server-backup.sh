@@ -11,7 +11,7 @@ tar -cvf "server-backup-$(date '+%Y-%m-%d').tar" /home/wwwroot
 # -pass: will be your encrypt password (Pls REMEMBER it)
 
 # upload to google drive
-./gdrive upload "server-backup-$(date '+%Y-%m-%d').tar"
+gdrive upload "server-backup-$(date '+%Y-%m-%d').tar"
 
 #only activate encryption mode
 #./gdrive upload "server-backup-$(date '+%Y-%m-%d').tar.enc"
