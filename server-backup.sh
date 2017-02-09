@@ -20,4 +20,4 @@ gdrive upload "server-backup-$(date '+%Y-%m-%d').tar"
 # remove the original tar
 rm -rf "server-backup-$(date '+%Y-%m-%d').tar"
 
-
+exit 0
